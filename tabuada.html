@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //não recebe paremetro (função pula linha)
+function pulaLinha(){ 
+    //instrução
+    document.write ("<br>");
+}
+
+//recebe paremetro (função mostra frase)
+function mostra (frase){
+    document.write (frase);
+    pulaLinha();
+}
+
+
+for (var multiplicador = 1; multiplicador <= 10; multiplicador++ ){
+
+    mostra (7 * multiplicador);
+   
+}
+</script>

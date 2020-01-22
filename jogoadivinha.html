@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //não recebe paremetro (função pula linha)
+function pulaLinha(){ 
+    //instrução
+    document.write ("<br>");
+}
+
+//recebe paremetro (função mostra frase)
+function mostra (frase){
+    document.write (frase);
+    pulaLinha();
+    }
+    var numeroPensado = Math.round(Math.random () * 10);
+
+var tentativas = 1;
+
+while(tentativas <= 3) {
+  
+
+    var chute = parseInt(prompt("Digíte seu chute!"));
+
+    if (chute == numeroPensado){
+
+        mostra ("Você ACERTOU, o numero pensado era " + numeroPensado);
+    break;
+     } else {
+
+    mostra ("Você ERROU!");  
+     }
+tentativas++; 
+}
+mostra ("FIM");
+
+
+</script>

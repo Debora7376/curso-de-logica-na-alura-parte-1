@@ -1,0 +1,29 @@
+    <meta charset="UTF-8">
+
+    <script>
+
+        //não recebe paremetro (função pula linha)
+    function pulaLinha(){ 
+        //instrução
+        document.write ("<br>");
+    }
+
+    //recebe paremetro (função mostra frase)
+    function mostra (frase){
+        document.write (frase);
+        pulaLinha();
+        }
+        
+        // três partes - a primeira é a variável de inicialização, a que será incrementada
+        //a segunda é a condição para sabermos quando ele deve parar de repetir o que está em seu bloco
+        // por fim, temos o incremento
+        for (var linha = 1; linha <= 3; linha++){
+
+        for (var coluna = 1; coluna <= 10; coluna++){
+            document.write ("*");
+        }
+        pulaLinha();
+}
+
+
+    </script>
